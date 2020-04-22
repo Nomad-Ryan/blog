@@ -1,0 +1,71 @@
+#header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  @include screen-sm {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 30;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 100px;
+
+    a {
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    @include screen-sm {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    .nav-item .nav-link {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 20px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #f44336;
+      }
+    }
+  }
+}
+
+.sns-liks {
+  margin-left: 40px;
+  @include screen-sm {
+    display: none;
+  }
+
+  a {
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+.btn-menu{
+  color: #ffffff;
+  font-size: 28px;
+}
